@@ -19,6 +19,10 @@ for country in countries:
         country.click()
         break
 
+# Retreiving the value which was updated dynamically through script
+
+assert driver.find_element(By.ID, "autosuggest").get_attribute("value") == "India"
+
 
 
 time.sleep(5)
